@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+    <script></script>
 </head>
 
 <body>
     <div
         class="bg-[url('https://masterd.es/web/images/heros/cabecera-home.webp')] bg-cover bg-center min-h-screen font-sans">
-        <div class="absolute inset-0 bg-black bg-opacity-50 min-h-[700px]" style="height: 700px;"></div>
-        <header class="absolute inset-x-0 top-0 z-50 bg-white bg-opacity-95">
+        <div class="absolute inset-0 bg-black bg-opacity-50 min-h-[700px]"></div>
+        <header class="absolute inset-x-0  z-50 bg-white bg-opacity-95">
             <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                 <div class="flex lg:flex-1">
                     <a href="#" class="-m-1.5 p-1.5">
@@ -31,12 +32,42 @@
                     </button>
                 </div>
                 <div class="hidden lg:flex lg:gap-x-12 min-h-6">
-                    <a href="#"
-                        class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">Cursos</a>
+                    <a href="#" class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button type="button" onmouseover="document.getElementById('menuCursos').classList.remove('hidden');" onmouseout="document.getElementById('menuCursos').classList.add('hidden');"
+                                    class=" hover:bg-gray-50 flex hover:border-b-2 border-[#eb8b3a] align-middle"
+                                    id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                    Cursos
+                                    <svg class="-mr-1 mt-[2px] h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="menuCursos" onmouseover="document.getElementById('menuCursos').classList.remove('hidden');">
+                                <div class="py-1" role="none">
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                        tabindex="-1" id="menu-item-0">Account settings</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                        tabindex="-1" id="menu-item-1">Support</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
+                                        tabindex="-1" id="menu-item-2">License</a>
+                                    <form method="POST" action="#" role="none">
+                                        <button type="submit"
+                                            class="block w-full px-4 py-2 text-left text-sm text-gray-700"
+                                            role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                     <a href="#"
                         class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">Oposiciones</a>
-                    <a href="#"
-                        class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">FP</a>
+                    <a href="#" class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">FP</a>
                     <a href="#"
                         class="text-sm font-semibold   text-gray-900 hover:border-b-2 border-[#eb8b3a]">Centros</a>
                     <a href="#" class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">Blog</a>
@@ -44,13 +75,12 @@
                         class="text-sm font-semibold   text-gray-900 hover:border-b-2 border-[#eb8b3a]">Opiniones</a>
                 </div>
                 <div class="hidden lg:flex lg:flex-1 lg:justify-end min-h-6">
-                    <a href="#"
-                        class="text-sm font-semibold text-gray-900 hover:border-b-2 border-[#eb8b3a]">Solicitar
+                    <a href="#" class="text-sm font-semibold text-gray-900 hover:border-b-2 border-[#eb8b3a]">Solicitar
                         Informacion <span aria-hidden="true">&rarr;</span></a>
                 </div>
             </nav>
             <!-- Mobile menu, show/hide based on menu open state. -->
-            <div class="hidden" role="dialog" aria-modal="true" id="menuMobil">
+            <div class="lg:hidden" role="dialog" aria-modal="true" id="menuMobil">
                 <!-- Background backdrop, show/hide based on slide-over state. -->
                 <div class="fixed inset-0 z-50"></div>
                 <div
@@ -60,7 +90,8 @@
                             <span class="sr-only"></span>
                             <img class="h-8 w-auto" src="img/logo.jpg" alt="">
                         </a>
-                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" onclick="document.getElementById('menuMobil').classList.add('hidden');">
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                            onclick="document.getElementById('menuMobil').classList.add('hidden');">
                             <span class="sr-only">Close menu</span>
                             <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" aria-hidden="true">
@@ -240,7 +271,8 @@
                 <div class="card-body mt-auto ">
                     <h2 class="card-title text-white">¿Quienes Somos?</h2>
                     <div class="card-actions">
-                        <button class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Descubrenos</button>
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Descubrenos</button>
                     </div>
                 </div>
             </div>
@@ -251,7 +283,9 @@
                 <div class="card-body mt-auto ">
                     <h2 class="card-title text-white">Formacion Abierta</h2>
                     <div class="card-actions">
-                        <button class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Nuestro metodo</button>
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Nuestro
+                            metodo</button>
                     </div>
                 </div>
             </div>
@@ -262,7 +296,9 @@
                 <div class="card-body mt-auto ">
                     <h2 class="card-title text-white">FAQS</h2>
                     <div class="card-actions">
-                        <button class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Preguntas frecuentes</button>
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Preguntas
+                            frecuentes</button>
                     </div>
                 </div>
             </div>
@@ -273,43 +309,45 @@
                 <div class="card-body mt-auto ">
                     <h2 class="card-title text-white">Expertos</h2>
                     <div class="card-actions">
-                        <button class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Nuestros Expertos</button>
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Nuestros
+                            Expertos</button>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <footer class="footer bg-[#f56600] text-base-content p-10 text-white">
         <aside class="text-white">
             <img class="h-5 w-auto filter brightness-0 invert" src="img/logo.jpg" alt="">
-          <p>
-            MasterD es la compañía de formación abierta <br />
-            líder en España, con 30 años de experiencia y <br />
-            un millar de profesionales. 
-          </p>
+            <p>
+                MasterD es la compañía de formación abierta <br />
+                líder en España, con 30 años de experiencia y <br />
+                un millar de profesionales.
+            </p>
         </aside>
         <nav class="text-white">
-          <h6 class="footer-title">Services</h6>
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
         </nav>
         <nav class="text-white">
-          <h6 class="footer-title">Company</h6>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
         </nav>
         <nav class="text-white">
-          <h6 class="footer-title">Legal</h6>
-          <a class="link link-hover">Terms of use</a>
-          <a class="link link-hover">Privacy policy</a>
-          <a class="link link-hover">Cookie policy</a>
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
         </nav>
-      </footer>
+    </footer>
 </body>
 
 </html>
