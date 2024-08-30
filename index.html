@@ -34,7 +34,7 @@
                     <a href="#" class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">
                         <div class="relative inline-block text-left">
                             <div>
-                                <button type="button" onmouseover="document.getElementById('menuCursos').classList.remove('hidden');" onmouseout="document.getElementById('menuCursos').classList.add('hidden');"
+                                <button type="button" onmouseover="document.getElementById('menuCursos').classList.remove('hidden');" 
                                     class=" hover:bg-gray-50 flex hover:border-b-2 border-[#eb8b3a] align-middle"
                                     id="menu-button" aria-expanded="true" aria-haspopup="true">
                                     Cursos
@@ -46,20 +46,26 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
-                                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="menuCursos" onmouseover="document.getElementById('menuCursos').classList.remove('hidden');">
-                                <div class="py-1" role="none">
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="menu-item-0">Account settings</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="menu-item-1">Support</a>
-                                    <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem"
-                                        tabindex="-1" id="menu-item-2">License</a>
-                                    <form method="POST" action="#" role="none">
-                                        <button type="submit"
-                                            class="block w-full px-4 py-2 text-left text-sm text-gray-700"
-                                            role="menuitem" tabindex="-1" id="menu-item-3">Sign out</button>
-                                    </form>
+                            <div class="absolute right-0 z-10 mt-2 w-64 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="menuCursos" onmouseleave="document.getElementById('menuCursos').classList.add('hidden');">
+                                <div class="flex">
+                                    <div class="py-1 " role="none">
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-0">Mantenimiento Industrial</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-1">Renovables</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white" role="menuitem"
+                                            tabindex="-1" id="menu-item-2">Sanidad y Salud</a>
+                                    </div>
+                                    <div class="py-1 " role="none">
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-0">Veterania</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-1">Audiovisuales</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white" role="menuitem"
+                                            tabindex="-1" id="menu-item-2">Informática
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
