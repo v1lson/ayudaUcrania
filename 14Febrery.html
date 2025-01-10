@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-white">
+    <div class="bg-cover bg-center min-h-screen font-sans">
+        <header class="absolute inset-x-0 top-0 z-50 bg-white bg-opacity-95 border-b-2 border-b-blue-600">
+            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="index.html" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-5 w-12 h-8"
+                            src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Ukraine.png" alt="">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" onclick="document.getElementById('menuMobil').classList.remove('hidden');"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12 min-h-6">
+                    <a href="14Febrery.html"
+                        class="text-sm font-semibold text-gray-900 hover:border-b-2 border-blue-600">14 Febrero</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end min-h-6">
+                    <a href="#" class="text-sm font-semibold text-gray-900 hover:border-b-2 border-blue-600">Solicitar
+                        Informacion <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="hidden" role="dialog" aria-modal="true" id="menuMobil">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div class="fixed inset-0 z-50"></div>
+                <div
+                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="index.html" class="-m-1.5 p-1.5">
+                            <span class="sr-only"></span>
+                            <img class="h-8 w-auto"
+                                src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Flag_of_Ukraine.png" alt="">
+                        </a>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                            onclick="document.getElementById('menuMobil').classList.add('hidden');">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">14 Febrero</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="pt-24 bg-pink-100">
+            <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+                <div class="absolute inset-0 -z-10 overflow-hidden bg-pink-100"></div>
+
+                <!-- Encabezado -->
+                <div
+                    class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                    <div
+                        class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                        <div class="lg:pr-4">
+                            <div class="lg:max-w-lg">
+                                <p class="text-base font-semibold text-indigo-600">🌟 Sorteo Solidario para San Valentín
+                                    🌟</p>
+                                <h1 class="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">¡Haz el
+                                    bien y gana!</h1>
+                                <p class="mt-6 text-xl text-gray-700">
+                                    Este 14 de febrero, celebremos no solo el amor, sino también la esperanza y el
+                                    apoyo. Únete a nuestra causa solidaria para ayudar a nuestros héroes en Ucrania y
+                                    participa en el sorteo de una <strong>cena para dos</strong>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div
+                        class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                        <img class="lg:w-[48rem] w-[90dvw] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                            src="https://imagenes.heraldo.es/files/image_1920_1080/uploads/imagenes/2024/01/24/san-valentin-gsc1.jpeg"
+                            alt="San Valentín">
+                    </div>
+
+                    <!-- Detalles del Sorteo -->
+                    <div
+                        class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                        <div class="lg:pr-4">
+                            <div class="max-w-xl text-base text-gray-700 lg:max-w-lg">
+                                <h2 class="text-2xl font-bold tracking-tight text-gray-900">Cómo participar</h2>
+                                <ul class="mt-4 space-y-4 list-disc pl-6">
+                                    <li>Haz una donación de al menos <strong>3€</strong> al número de cuenta que se
+                                        indica abajo.</li>
+                                    <li>Envía un screenshot del comprobante para recibir tu número de participante.</li>
+                                    <li>El sorteo se realizará el <strong>14 de febrero</strong> y se anunciará en mi
+                                        Instagram: <a href="https://instagram.com/kasko_angelika" target="_blank"
+                                            class="text-indigo-600">@kasko_angelika</a>.</li>
+                                </ul>
+
+                                <h2 class="mt-8 text-2xl font-bold tracking-tight text-gray-900">¿Dónde irán los fondos?
+                                </h2>
+                                <p class="mt-4">Todo lo recaudado será destinado a Ruslana, quien lleva más de dos años
+                                    apoyando a los soldados ucranianos con medicinas, ropa y otros suministros
+                                    esenciales.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold tracking-tight text-gray-900">Nuestro objetivo</h2>
+                                <p class="mt-4">Reunir <strong>300€</strong> para adquirir una estación terrestre para
+                                    drones FPV Battle Born.</p>
+
+                                <h2 class="mt-8 text-2xl font-bold tracking-tight text-gray-900">¡Tu ayuda importa!</h2>
+                                <p class="mt-4">Cada donación, por pequeña que sea, es un paso hacia salvar vidas y
+                                    acercarnos a la victoria. ¡Gracias por tu apoyo! 💙💛</p>
+
+                                <!-- Número de cuenta -->
+                                <div class="mt-6 bg-gray-100 p-4 rounded-lg">
+                                    <p class="font-semibold">Bizum:</p>
+                                    <p class="text-xl font-bold text-gray-900">694 48 75 71</p>
+                                    <p class="font-semibold mt-4">PayPal:</p>
+                                    <p class="text-xl font-bold text-gray-900">solnceu24@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!--
+  <div class="relative max-w-3xl mx-auto overflow-hidden pb-64">
+
+    <div id="carousel" class="flex transition-transform duration-500">
+      <div class="max-h-2xl w-full flex-shrink-0">
+        <img src="https://scontent-mad2-1.xx.fbcdn.net/v/t39.30808-6/321137244_679794130416095_3949566104194734731_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_ohc=VjAqxbSDOZgQ7kNvgG7eJ32&_nc_oc=AdgOeaEQFK0tHNE-jDgSowk1Rozjx6UWqQG0G1ahQcMHtsNkcpV1XZ0ki5dDRpnmucW_BUl_ub6WFXS-797ycL9i&_nc_zt=23&_nc_ht=scontent-mad2-1.xx&_nc_gid=AHRg5_4exmOF6PMIQFCkple&oh=00_AYCNdIA_QEkf7fqP9GL3FU6d3oOLPnqtrInCzu5cHaqZkQ&oe=67871D72" alt="Slide 1" class="w-full">
+      </div>
+      <div class="max-h-2xl w-full flex-shrink-0">
+        <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/375950809_1840151389756657_5765390527375302239_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=mFL5RlnmHu8Q7kNvgFbUGmw&_nc_oc=AdgdTkjpUb368ViM005WkElRFBgi7ivOPogq_k1XiSEpjl5PiXi3sVE1Gt6ifVuzGWkEnOTQZ6LhhBhZ26L3_roq&_nc_zt=23&_nc_ht=scontent-mad1-1.xx&_nc_gid=A4QV9-0YnTb9_czOYmLnXkV&oh=00_AYDCyl31qPC1lvDnQejdycBBl4kWm1NRofW4iANqbCVtog&oe=678720F5" alt="Slide 2" class="w-full">
+      </div>
+      <div class="max-h-2xl w-full flex-shrink-0">
+        <img src="https://scontent-mad1-1.xx.fbcdn.net/v/t39.30808-6/325608784_550529347111866_7603254884123057804_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=FVFv3f944boQ7kNvgEPAL2M&_nc_oc=Adgmz4MeSl04buzOqZcL2-fvX-2gUb-pwYioODHpU5mc_W8DxVWYi3F5mElkfNCB3roJy6xcX_bDLA1ej4NDc38o&_nc_zt=23&_nc_ht=scontent-mad1-1.xx&_nc_gid=AYW6vMtOFnOUxISUI5V6Fva&oh=00_AYCP-Az66ql5vC3FqqoA_3ElbKNGBbDwoYlEvERiLxONZQ&oe=6786FE90" alt="Slide 3" class="w-full">
+      </div>
+    </div>
+    <button id="prev" class="absolute top-1/2 left-0 -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-l-md hover:bg-gray-600">❮</button>
+    <button id="next" class="absolute top-1/2 right-0 -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-r-md hover:bg-gray-600">❯</button>
+  </div>
+-->
+
+    <script>
+        const carousel = document.getElementById('carousel');
+        const slides = carousel.children;
+        const totalSlides = slides.length;
+
+        let currentSlide = 0;
+
+        document.getElementById('next').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        });
+
+        document.getElementById('prev').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+        });
+    </script>
+
+</body>
+
+</html>
