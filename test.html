@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div
+        class="bg-[url('https://masterd.es/web/images/heros/cabecera-home.webp')] bg-cover bg-center min-h-screen font-sans">
+        <div class="absolute inset-0 bg-black bg-opacity-50 min-h-[700px]"></div>
+        <header class="absolute inset-x-0 top-0 z-50 bg-white bg-opacity-95">
+            <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Your Company</span>
+                        <img class="h-5 w-auto" src="img/logo.jpg" alt="">
+                    </a>
+                </div>
+                <div class="flex lg:hidden">
+                    <button type="button" onclick="document.getElementById('menuMobil').classList.remove('hidden');"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden lg:flex lg:gap-x-12 min-h-6">
+                    <a href="#" class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">
+                        <div class="relative inline-block text-left">
+                            <div>
+                                <button type="button" onmouseover="document.getElementById('menuCursos').classList.remove('hidden');" 
+                                    class=" hover:bg-gray-50 flex hover:border-b-2 border-[#eb8b3a] align-middle"
+                                    id="menu-button" aria-expanded="true" aria-haspopup="true">
+                                    Cursos
+                                    <svg class="-mr-1 mt-[2px] h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="absolute right-0 z-10 mt-2 w-64 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none hidden"
+                                role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1" id="menuCursos" onmouseleave="document.getElementById('menuCursos').classList.add('hidden');">
+                                <div class="flex">
+                                    <div class="py-1 " role="none">
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-0">Mantenimiento Industrial</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-1">Renovables</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white" role="menuitem"
+                                            tabindex="-1" id="menu-item-2">Sanidad y Salud</a>
+                                    </div>
+                                    <div class="py-1 " role="none">
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-0">Veterania</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white border-b-2" role="menuitem"
+                                            tabindex="-1" id="menu-item-1">Audiovisuales</a>
+                                        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-[#eb8b3a] hover:text-white" role="menuitem"
+                                            tabindex="-1" id="menu-item-2">Informática
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">Oposiciones</a>
+                    <a href="#" class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">FP</a>
+                    <a href="#"
+                        class="text-sm font-semibold   text-gray-900 hover:border-b-2 border-[#eb8b3a]">Centros</a>
+                    <a href="#" class="text-sm font-semibold  text-gray-900 hover:border-b-2 border-[#eb8b3a]">Blog</a>
+                    <a href="#"
+                        class="text-sm font-semibold   text-gray-900 hover:border-b-2 border-[#eb8b3a]">Opiniones</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end min-h-6">
+                    <a href="#" class="text-sm font-semibold text-gray-900 hover:border-b-2 border-[#eb8b3a]">Solicitar
+                        Informacion <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+            <!-- Mobile menu, show/hide based on menu open state. -->
+            <div class="lg:hidden" role="dialog" aria-modal="true" id="menuMobil">
+                <!-- Background backdrop, show/hide based on slide-over state. -->
+                <div class="fixed inset-0 z-50"></div>
+                <div
+                    class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+                    <div class="flex items-center justify-between">
+                        <a href="#" class="-m-1.5 p-1.5">
+                            <span class="sr-only"></span>
+                            <img class="h-8 w-auto" src="img/logo.jpg" alt="">
+                        </a>
+                        <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                            onclick="document.getElementById('menuMobil').classList.add('hidden');">
+                            <span class="sr-only">Close menu</span>
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-6 flow-root">
+                        <div class="-my-6 divide-y divide-gray-500/10">
+                            <div class="space-y-2 py-6">
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Cursos</a>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Oposiciones</a>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">FP</a>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Centros</a>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</a>
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Opiniones</a>
+                            </div>
+                            <div class="py-6">
+                                <a href="#"
+                                    class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log
+                                    in</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+                aria-hidden="true">
+            </div>
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div class="text-center">
+                    <h1 class="text-4xl font-bold  text-gray-100 sm:text-6xl w-min mx-auto drop-shadow-2xl ">MasterD
+                    </h1>
+                    <p class="mt-6 text-2xl leading-8 text-gray-200 drop-shadow-2xl">Grupo Educativo Líder en Formación
+                        Abierta</p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <a href="#"
+                            class=" w-32 rounded-md bg-[#f56600] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm duration-200  hover:text-[#f56600] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Cursos </a>
+                        <a href="#"
+                            class=" w-32 rounded-md bg-[#f56600] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm duration-200  hover:text-[#f56600] hover:bg-white  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Oposiciones</a>
+                        <a href="#"
+                            class=" w-32 rounded-md bg-[#f56600] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm duration-200  hover:text-[#f56600] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            FP</a>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+                aria-hidden="true">
+            </div>
+        </div>
+    </div>
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pr-8 lg:pt-4">
+                    <div class="lg:max-w-lg">
+                        <h2 class="text-base font-semibold leading-7 text-[#f56600]">¡Empieza ya!</h2>
+                        <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Descubre nuestros
+                            centros
+                        </p>
+                        <p class="mt-6 text-lg leading-8 text-gray-600">Combinamos lo mejor de la formación online y
+                            presencial.</p>
+                        <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-[#f56600]" viewBox="0 0 16 16"
+                                        version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill="#f56600"
+                                                d="M14 15v-11h-3v-3h-9v14h-2v1h7v-3h2v3h7v-1h-2zM6 11h-2v-2h2v2zM6 8h-2v-2h2v2zM6 5h-2v-2h2v2zM9 11h-2v-2h2v2zM9 8h-2v-2h2v2zM9 5h-2v-2h2v2zM13 11h-2v-2h2v2zM13 8h-2v-2h2v2z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    38 centros en España y Portugal.
+                                </dt>
+                                <dd class="inline">Contamos con 38 centros en España y Portugal para estar cerca de ti
+                                    siempre que lo necesites.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-[#f56600]" viewBox="0 0 16 16"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M10 16L12 14V10L13.6569 8.34314C15.1571 6.84285 16 4.80802 16 2.68629V0H13.3137C11.192 0 9.15714 0.842855 7.65685 2.34315L6 4H2L0 6L10 16ZM10.5 7C11.3284 7 12 6.32843 12 5.5C12 4.67157 11.3284 4 10.5 4C9.67157 4 9 4.67157 9 5.5C9 6.32843 9.67157 7 10.5 7Z"
+                                                fill="#f56600"></path>
+                                            <path d="M4.9274 13.7558L2.24423 11.0726L0 15L1 16L4.9274 13.7558Z"
+                                                fill="#f56600"></path>
+                                        </g>
+                                    </svg>
+                                    Tecnología de vanguardia.
+                                </dt>
+                                <dd class="inline">Nuestros centros están en constante actualización para que siempre
+                                    cuentes con la última tecnología de cada sector.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-[#f56600]" fill="#f56600"
+                                        height="200px" width="200px" version="1.1" id="Layer_1"
+                                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        viewBox="0 0 232.688 232.688" xml:space="preserve">
+                                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round">
+                                        </g>
+                                        <g id="SVGRepo_iconCarrier">
+                                            <g id="XMLID_350_">
+                                                <g id="XMLID_351_">
+                                                    <path id="XMLID_352_"
+                                                        d="M97.688,61.344h120c8.284,0,15-6.716,15-15s-6.716-15-15-15h-120c-8.284,0-15,6.716-15,15 S89.403,61.344,97.688,61.344z">
+                                                    </path>
+                                                </g>
+                                                <g id="XMLID_439_">
+                                                    <path id="XMLID_440_"
+                                                        d="M217.688,101.344h-120c-8.284,0-15,6.716-15,15s6.716,15,15,15h120c8.284,0,15-6.716,15-15 S225.972,101.344,217.688,101.344z">
+                                                    </path>
+                                                </g>
+                                                <g id="XMLID_441_">
+                                                    <path id="XMLID_443_"
+                                                        d="M217.688,171.344h-120c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h120c8.284,0,15-6.716,15-15 C232.688,178.06,225.972,171.344,217.688,171.344z">
+                                                    </path>
+                                                </g>
+                                                <g id="XMLID_444_">
+                                                    <path id="XMLID_445_"
+                                                        d="M48.785,104.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181 c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104 c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336 c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698 c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142-0.001,7.499-3.358,7.499-7.5 c0-0.629-0.077-1.241-0.223-1.825l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688 C53.958,106.797,51.61,104.818,48.785,104.408z">
+                                                    </path>
+                                                </g>
+                                                <g id="XMLID_446_">
+                                                    <path id="XMLID_447_"
+                                                        d="M48.785,34.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181 c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104 c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336 c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698 c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142,0,7.499-3.358,7.499-7.5c0-0.629-0.077-1.241-0.223-1.825 l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688C53.958,36.797,51.61,34.818,48.785,34.408z">
+                                                    </path>
+                                                </g>
+                                                <g id="XMLID_448_">
+                                                    <path id="XMLID_449_"
+                                                        d="M48.785,174.408l-9.989-1.452l-4.467-9.052c-1.264-2.56-3.87-4.181-6.726-4.181 c-2.854,0-5.462,1.621-6.726,4.181l-4.468,9.052l-9.988,1.452c-2.825,0.41-5.173,2.389-6.055,5.104 c-0.882,2.715-0.146,5.695,1.897,7.688l7.228,7.045l-1.707,9.949c-0.483,2.814,0.674,5.658,2.983,7.336 c1.307,0.95,2.853,1.433,4.409,1.433c1.193,0,2.392-0.285,3.489-0.861l8.936-4.698l8.936,4.698 c1.098,0.577,2.296,0.861,3.489,0.861c0.007,0,0.015,0,0.021,0c4.142-0.001,7.499-3.358,7.499-7.5 c0-0.629-0.077-1.241-0.223-1.825l-1.612-9.393l7.228-7.045c2.045-1.993,2.78-4.973,1.898-7.688 C53.958,176.797,51.61,174.818,48.785,174.408z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    Habilidades y competencias imprescindibles.
+                                </dt>
+                                <dd class="inline">A través de nuestro método, desarrollarás las habilidades y
+                                    competencias clave para destacar en el mundo actual.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <img src="https://masterd.es/web/images/home/section-home-centros.webp" alt="Product screenshot"
+                    class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0 scale-x-[-1]"
+                    width="2432" height="1442">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 max-w-7xl px-6 lg:px-8 mx-auto mt-24">
+            <div class="card bg-base-100 image-full h-64 w-96 shadow-xl  mx-auto ">
+                <figure>
+                    <img class="w-full" src="https://masterd.es/web/images/home/quienes-somos.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body mt-auto ">
+                    <h2 class="card-title text-white">¿Quienes Somos?</h2>
+                    <div class="card-actions">
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Descubrenos</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 image-full h-64 w-96 shadow-xl mx-auto ">
+                <figure>
+                    <img class="w-full" src="https://masterd.es/web/images/home/formacion-abierta.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body mt-auto ">
+                    <h2 class="card-title text-white">Formacion Abierta</h2>
+                    <div class="card-actions">
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Nuestro
+                            metodo</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 image-full h-64 w-96 shadow-xl mx-auto ">
+                <figure>
+                    <img class="w-full" src="https://masterd.es/web/images/home/faqs.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body mt-auto ">
+                    <h2 class="card-title text-white">FAQS</h2>
+                    <div class="card-actions">
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Preguntas
+                            frecuentes</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-base-100 image-full h-64 w-96 shadow-xl mx-auto ">
+                <figure>
+                    <img class="w-full" src="https://masterd.es/web/images/home/expertos.webp" alt="Shoes" />
+                </figure>
+                <div class="card-body mt-auto ">
+                    <h2 class="card-title text-white">Expertos</h2>
+                    <div class="card-actions">
+                        <button
+                            class="btn bg-[#f56600] duration-200 text-white border-0 hover:text-[#f56600] hover:bg-white">Nuestros
+                            Expertos</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer bg-[#f56600] text-base-content p-10 text-white">
+        <aside class="text-white">
+            <img class="h-5 w-auto filter brightness-0 invert" src="img/logo.jpg" alt="">
+            <p>
+                MasterD es la compañía de formación abierta <br />
+                líder en España, con 30 años de experiencia y <br />
+                un millar de profesionales.
+            </p>
+        </aside>
+        <nav class="text-white">
+            <h6 class="footer-title">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav class="text-white">
+            <h6 class="footer-title">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav class="text-white">
+            <h6 class="footer-title">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
